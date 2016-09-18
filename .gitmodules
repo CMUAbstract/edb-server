@@ -13,3 +13,6 @@
 [submodule "ext/libio"]
 	path = ext/libio
 	url = /afs/ece.cmu.edu/project/abstract/repos/libio
+[submodule "ext/msp430-softuart"]
+	path = ext/libmspsoftuart
+	url = /afs/ece.cmu.edu/project/abstract/repos/msp430-softuart
