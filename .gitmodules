@@ -1,0 +1,3 @@
+[submodule "ext/libedbserver"]
+	path = ext/libedbserver
+	url = /afs/ece.cmu.edu/project/abstract/repos/edb/edb-firmware
