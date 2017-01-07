@@ -56,5 +56,5 @@ include ../Makefile.config
 # To build the dependee that uses the headers, we need the config macros here
 include $(LIB_ROOT)/libmsp/bld/Makefile.config
 
-CONFIG_PRINTF_LIB = libmspsoftuart
+export CONFIG_PRINTF_LIB = libmspsoftuart
 include $(MAKER_ROOT)/Makefile.console
