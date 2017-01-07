@@ -61,7 +61,9 @@ int main(void)
 
     LOG("\r\nEDB\r\n");
 
+#ifdef CONFIG_MAIN_LOOP_LED
     unsigned main_loop_count = 0;
+#endif // CONFIG_MAIN_LOOP_LED
 
     LOG("init EDB server\r\n");
     edb_server_init();
