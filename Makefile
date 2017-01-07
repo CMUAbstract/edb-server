@@ -1,4 +1,5 @@
-export BOARD ?= edb
+# export BOARD ?= edb
+export BOARD ?= edb-1.1
 
 TOOLCHAINS = \
 	gcc \
