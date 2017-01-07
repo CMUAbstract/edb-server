@@ -7,6 +7,9 @@ DEPS += \
 	libmsp \
 	libedbserver \
 
+# libedb is not a full dependency, We only need the headers
+override CFLAGS += -I$(LIB_ROOT)/libedb/src/include
+
 ## Config local to this app executable
 export CONFIG_ROUTE_ACLK_TO_PIN ?= 0
 export CONFIG_CLOCK_TEST_MODE ?= 0
