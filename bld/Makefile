@@ -46,10 +46,18 @@ export LIBMSP_DCO_FREQ = 24000000ull
 
 export LIBMSP_STARTUP_VOLTAGE_WORKAROUNDS = disable-pmm
 
-export LIBMSPSOFTUART_PORT_TX = 1.1
 export LIBMSPSOFTUART_BAUDRATE = 115200
 export LIBMSPSOFTUART_CLOCK_FREQ = $(LIBMSP_DCO_FREQ)
+
+ifeq ($(BOARD),edb)
+export LIBMSPSOFTUART_PORT_TX = 1.1
 export LIBMSPSOFTUART_TIMER = A.0.0
+else ifeq ($(BOARD),edb-1.1)
+export LIBMSPSOFTUART_PORT_TX = 1.7
+export LIBMSPSOFTUART_TIMER = A.1.0
+else
+$(error Uknown BOARD)
+endif # BOARD
 
 include ../Makefile.config
 
