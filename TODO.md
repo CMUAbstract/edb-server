@@ -25,3 +25,11 @@ need any hardware modification to EDB.
 
 Incorporate a Coulomb counter for energy measurement and current measurement IC
 (or instrumentation op amp + Rsense).
+
+6. Mode for operating with power supplied by EDB
+
+This would improve measurement accuracy, when measuring delta-energy with
+a pair of watchpoints, by eliminating incoming power during execution.
+
+This feature would involve a simple pattern specification, and a
+loop to run the charge command repeatedly.
