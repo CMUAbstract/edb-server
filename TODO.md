@@ -2,6 +2,10 @@
 
 It appears that the app resumes on the target before EDB is listening for watchpoints.
 
+2. Bug: skipped watchpoints, with and without buffering.
+
+This is likely due to DMA keeping the core busy. Need to switch to Xmos Xcore...
+
 2. Simultaneous printf and watchpoint streaming
     
 Potential plan: split console into daemon and multiple clients, the CLI will be
